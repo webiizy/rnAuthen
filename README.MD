@@ -3,3 +3,24 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 
 npm install @react-navigation/stack
 npm install @react-navigation/bottom-tabs
+npm i @react-navigation/material-bottom-tabs
+npm i react-native-paper
+
+#-------
+
+npm install galio-framework
+npm i react-native-vector-icons
+
+# install firebase
+
+npm i @react-native-firebase/app @react-native-firebase/auth @react-native-firebase/firestore
+
+npm i @react-native-community/google-signin react-native-fbsdk
+
+# tao keystore
+
+keytool -list -v -alias androiddebugkey -keystore ./android/app/debug.keystore -storepass android -keypass android
+
+keytool -genkey -v -keystore myrelease.keystore -alias myrelease -keyalg RSA -keysize 2048 -validity 10000
+
+password myrelease
