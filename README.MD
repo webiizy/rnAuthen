@@ -20,7 +20,14 @@ npm i @react-native-community/google-signin react-native-fbsdk
 # tao keystore
 
 keytool -list -v -alias androiddebugkey -keystore ./android/app/debug.keystore -storepass android -keypass android
+keytool -list -v -alias myrelease -keystore ./android/app/myrelease.keystore -storepass 123456 -keypass 123456
 
 keytool -genkey -v -keystore myrelease.keystore -alias myrelease -keyalg RSA -keysize 2048 -validity 10000
 
-password myrelease
+password 123456
+
+# trouble shoot
+
+./gradlew --stacktrace
+./gradlew --warning-mode all
+cd android && ./gradlew clean && ./gradlew :app:bundleRelease

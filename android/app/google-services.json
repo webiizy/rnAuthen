@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "247366912018",
+    "firebase_url": "https://authentication-45b90.firebaseio.com",
+    "project_id": "authentication-45b90",
+    "storage_bucket": "authentication-45b90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247366912018:android:fa7f93b37569c4b0ba70cb",
+        "android_client_info": {
+          "package_name": "com.rnauthen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247366912018-9t28mne0grjmaej1cep890esvpa8mfjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rnauthen",
+            "certificate_hash": "6cf4658bbfb11dbb4f11aeab9e81e2dc4b772488"
+          }
+        },
+        {
+          "client_id": "247366912018-0gm8irum4fs6t1m9260ug92lllcdtgos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rnauthen",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "247366912018-hk6hi7oen8s4hcvh8j4f57ft2vcfd10s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiK-4O69-g6Du8VtKbN6swWbIpPCmN1CE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247366912018-hk6hi7oen8s4hcvh8j4f57ft2vcfd10s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

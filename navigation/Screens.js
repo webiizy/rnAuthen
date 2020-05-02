@@ -11,7 +11,7 @@ import {StateProvider, firebase, StateContext} from '../context';
 
 const {width} = Dimensions.get('screen');
 const profile = {
-  avatar: Images.Profile,
+  avatar: '',
   name: 'Guest',
   // type: "Seller",
   plan: 'VIP',
@@ -24,6 +24,10 @@ const Tab = createMaterialBottomTabNavigator();
 
 export default (MainStack = props => {
   const [user, setUser] = useState(profile);
+
+  useEffect(() => {
+    firebase.onAuthStateChanged(setUser);
+  }, []);
 
   return (
     <StateProvider user={user}>
