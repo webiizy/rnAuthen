@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -27,6 +27,11 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
+  const [spinner, setSpinner] = useState(true);
+
+  useEffect(() => {
+    global.setSpinner = setSpinner;
+  }, []);
   return (
     <NavigationContainer>
       <GalioProvider>

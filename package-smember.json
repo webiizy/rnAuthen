@@ -1,0 +1,71 @@
+{
+  "name": "s-member",
+  "version": "1.4.0",
+  "description": "Swifi app - to use wifi for free",
+  "private": true,
+  "scripts": {
+    "start": "react-native start --reset-cache",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "build": "cd android && ./gradlew assembleRelease",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.9.0",
+    "@react-native-community/google-signin": "^4.0.0",
+    "@react-native-community/masked-view": "~0.1.6",
+    "@react-native-firebase/app": "^6.4.0",
+    "@react-native-firebase/auth": "^6.4.0",
+    "@react-native-firebase/firestore": "^6.4.0",
+    "@react-navigation/compat": "~5.0.5",
+    "@react-navigation/drawer": "~5.0.5",
+    "@react-navigation/material-bottom-tabs": "^5.1.8",
+    "@react-navigation/material-top-tabs": "^5.1.8",
+    "@react-navigation/native": "~5.0.5",
+    "@react-navigation/stack": "~5.0.6",
+    "expo-asset": "^8.1.4",
+    "expo-font": "^8.1.1",
+    "galio-framework": "~0.6.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-hook-form": "^5.2.0",
+    "react-native": "~0.61.4",
+    "react-native-fbsdk": "^1.1.2",
+    "react-native-gesture-handler": "~1.5.0",
+    "react-native-loading-spinner-overlay": "^1.1.0",
+    "react-native-modal": "^11.5.6",
+    "react-native-modal-dropdown": "~0.7.0",
+    "react-native-momosdk": "^1.3.4",
+    "react-native-paper": "^3.8.0",
+    "react-native-reanimated": "~1.7.0",
+    "react-native-render-html": "^4.2.0",
+    "react-native-safe-area-context": "~0.7.3",
+    "react-native-screens": "^2.4.0",
+    "react-native-swipeable": "^0.6.0",
+    "react-native-tab-view": "^2.14.0",
+    "react-native-unimodules": "^0.9.0",
+    "react-native-vector-icons": "^6.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/runtime": "7.9.2",
+    "@react-native-community/eslint-config": "0.0.5",
+    "babel-jest": "24.9.0",
+    "eslint": "6.8.0",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.56.4",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/material-kit-react-native/issues"
+  },
+  "homepage": "https://demos.creative-tim.com/material-kit-react-native/",
+  "demo": "https://github.com/creativetimofficial/material-kit-react-native",
+  "galio-demo": "https://github.com/galio-org/galio-starter-kit"
+}
