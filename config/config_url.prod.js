@@ -1,4 +1,5 @@
 module.exports = {
-  logLev: "error",
-  webClientId: '907318826622-vdjljepfeg30d4trknnqcvl217mi61g4.apps.googleusercontent.com', // From Firebase Console Settings
+  logLev: 'error',
+  webClientId:
+    '247366912018-hk6hi7oen8s4hcvh8j4f57ft2vcfd10s.apps.googleusercontent.com', // From Firebase Console Settings
 };

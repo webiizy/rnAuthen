@@ -17,7 +17,7 @@ npm i @react-native-firebase/app @react-native-firebase/auth @react-native-fireb
 
 npm i @react-native-community/google-signin react-native-fbsdk
 
-# tao keystore
+# tao keystore cho build app
 
 keytool -list -v -alias androiddebugkey -keystore ./android/app/debug.keystore -storepass android -keypass android
 keytool -list -v -alias myrelease -keystore ./android/app/myrelease.keystore -storepass 123456 -keypass 123456
@@ -26,8 +26,34 @@ keytool -genkey -v -keystore myrelease.keystore -alias myrelease -keyalg RSA -ke
 
 password 123456
 
+## Login facebook
+
+- Lay facebook APP ID va secrect , enable authentication bang facebook, dien app id , va key
+- copy link oauth redirect , past vao facebook app, URI chuyển hướng OAuth hợp lệ: https://authentication-45b90.firebaseapp.com/__/auth/handler
+- Lay key add vao sample
+
+# Lay key cho login facbook
+
+'''ssh
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+
+=> YqUsfQRPQj5oOxOXQJwVnN75Pjk=
+
+vao link https://developers.facebook.com/settings/developer/sample-app/
+
 # trouble shoot
 
 ./gradlew --stacktrace
 ./gradlew --warning-mode all
 cd android && ./gradlew clean && ./gradlew :app:bundleRelease
+
+# Link tai lieu
+
+https://firebase.google.com/docs/android/setup/?gclid=Cj0KCQjwtLT1BRD9ARIsAMH3BtXja9AQunHxPcjcc98AvNlgeKDkqaaHTvGfJCGiinTVtccqpnSYdzAaAgsvEALw_wcB
+
+# Login Facbook tai lieu
+
+https://developers.facebook.com/docs/facebook-login/web
+https://firebase.google.com/docs/auth/web/facebook-login?authuser=0
+
+https://rnfirebase.io/auth/social-auth

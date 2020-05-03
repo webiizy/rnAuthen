@@ -58,6 +58,28 @@ const SignIn = props => {
       console.log('Submit login email failed', error);
     }
   };
+  const onLoginHandle = (error, user) => {
+    setWaiting(false);
+    global.setSpinner(false);
+    if (error) {
+      if (error.code === 'auth/account-exists-with-different-credential') {
+        setModalMess(
+          `Email: ${error.email} already in use to login with ${
+            error.provider
+          }!`,
+        );
+        toggleModal(true);
+      } else {
+        console.log('Api call error', error);
+        setModalMess(`Cannot login: ${error}`);
+        toggleModal(true);
+      }
+    } else {
+      setModalMess(`Welcome, ${user.displayName || user.email}!`);
+      toggleModal(true);
+    }
+  };
+
   useEffect(() => {
     register('email', {
       required: 'Vui lòng nhập email',
