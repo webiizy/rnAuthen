@@ -57,3 +57,4 @@ https://developers.facebook.com/docs/facebook-login/web
 https://firebase.google.com/docs/auth/web/facebook-login?authuser=0
 
 https://rnfirebase.io/auth/social-auth
+https://developers.facebook.com/apps/478371012580531/fb-login/settings/
