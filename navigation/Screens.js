@@ -28,9 +28,11 @@ const Tab = createMaterialBottomTabNavigator();
 function AcountStackScreen(props) {
   const {user} = useContext(StateContext);
   const {name} = props.route;
+  console.log('###Screens.js###--  user', user);
+
   return (
     <Stack.Navigator initialRouteName={name}>
-      {user && user.isAnonymous ? (
+      {user.isAnonymous ? (
         <Stack.Screen name="Sign In" component={SignInScreen} />
       ) : (
         <Stack.Screen name={name} component={AccountScreen} />
