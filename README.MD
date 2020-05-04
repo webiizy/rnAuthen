@@ -39,6 +39,11 @@ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore |
 
 => YqUsfQRPQj5oOxOXQJwVnN75Pjk=
 
+keytool -exportcert -alias myrelease -keystore ~/.android/myrelease.keystore | openssl sha1 -binary | openssl base64
+=> GMpAMZgYO6tdw2BZZh13e+kdfu8=
+
+keytool -exportcert -alias myrelease -keystore ./android/app/myrelease.keystore -storepass 123456 -keypass 123456 | openssl sha1 -binary | openssl base64
+
 vao link https://developers.facebook.com/settings/developer/sample-app/
 
 # trouble shoot
