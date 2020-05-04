@@ -35,14 +35,13 @@ password 123456
 # Lay key cho login facbook
 
 '''ssh
-keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+keytool -exportcert -alias androiddebugkey -keystore ./android/debug.keystore | openssl sha1 -binary | openssl base64
 
-=> YqUsfQRPQj5oOxOXQJwVnN75Pjk=
-
-keytool -exportcert -alias myrelease -keystore ~/.android/myrelease.keystore | openssl sha1 -binary | openssl base64
-=> GMpAMZgYO6tdw2BZZh13e+kdfu8=
+=> /k/Bkfg9iSPyP0xGtVuAh1TYdOA=
 
 keytool -exportcert -alias myrelease -keystore ./android/app/myrelease.keystore -storepass 123456 -keypass 123456 | openssl sha1 -binary | openssl base64
+
+oaqqREEvdEKg6R0hvlG4f9mKmbg=
 
 vao link https://developers.facebook.com/settings/developer/sample-app/
 
