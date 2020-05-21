@@ -1,11 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {Block, Text, theme} from 'galio-framework';
+import {Button, Icon, Input, Card, Modal} from '../components';
 
 const HomeScreen = props => {
   return (
-    <View style={styles.screen}>
-      <Text>HomeScreen</Text>
-    </View>
+    <Block flex center>
+      <Button style={{marginTop: 10}}>Tìm kiếm đơn hàng</Button>
+      <Button style={{marginTop: 10}}>Đơn Hàng Cần Nhận </Button>
+      <Button style={{marginTop: 10}}>Đơn Hàng Đang Giữ </Button>
+    </Block>
   );
 };
 
